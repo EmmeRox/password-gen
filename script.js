@@ -102,9 +102,12 @@ function getRandomCharacter() {
 }
 
 function getRandomPassword() {
-  let randomPassword = "";
+  let randomPasswordOne = "";
+  let randomPasswordTwo = "";
   for (let i = 0; i < passwordLength; i++) {
-    randomPassword += getRandomCharacter();
+    randomPasswordOne += getRandomCharacter();
+    randomPasswordTwo += getRandomCharacter();
   }
-  return randomPassword;
+  passwordOne.innerText = randomPasswordOne;
+  passwordTwo.innerText = randomPasswordTwo;
 }
